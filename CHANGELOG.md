@@ -6,6 +6,14 @@ All notable changes to Shelf are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- **Shelf has a French interface.** Choose **Français** under Account → Language,
+  or let the browser's language pick it. It translates every area the Italian
+  and Chinese translations cover, and is still behind `SHELF_I18N=on`. A copy of
+  an item is an *exemplaire*, the library term. The wording avoids gendered
+  forms.
+
 ## [0.81.1] - 2026-11-15
 
 This release changes nothing in the app. It fixes a contributor check. Since

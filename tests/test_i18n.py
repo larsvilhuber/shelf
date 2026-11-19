@@ -23,7 +23,9 @@ def _i18n_on(monkeypatch):
     (None, "", "en"),
     (None, "it-IT,it;q=0.9,en;q=0.8", "it"),
     (None, "en-US,en;q=0.9,it;q=0.8", "en"),
-    (None, "fr-FR,fr;q=0.9,it;q=0.5", "it"),      # unsupported tags are skipped
+    (None, "de-DE,de;q=0.9,it;q=0.5", "it"),      # unsupported tags are skipped
+    (None, "fr-CA,fr;q=0.9,en;q=0.8", "fr"),      # a regional French finds French
+    ("fr", "it", "fr"),                           # the user's choice beats the browser
     (None, "it;q=0.4,en;q=0.9", "en"),            # q-value beats position
     (None, "it;q=0", "en"),                       # q=0 means "not this one"
     (None, "it;level=1;q=0", "en"),               # q is read wherever it sits
@@ -67,6 +69,26 @@ def test_gettext_follows_the_locale():
         i18n.current_locale.reset(token)
     assert i18n.gettext("Sign out") == "Sign out"
     assert i18n.js_catalog() == {}
+
+
+def test_french_catalog():
+    token = i18n.current_locale.set("fr")
+    try:
+        assert i18n.gettext("Sign out") == "Se déconnecter"
+        assert i18n.js_catalog()["Done"] == "Terminé"
+        # French punctuation takes a no-break space before : ? ! and inside « ».
+        assert i18n.gettext("Type:") == "Type\u00a0:"
+        assert i18n.ngettext("%(num)s item you skipped is still waiting for a cover.",
+                             "%(num)s items you skipped are still waiting for a cover.", 1) \
+            .startswith("%(num)s élément ignoré")
+    finally:
+        i18n.current_locale.reset(token)
+
+
+def test_french_login_page(client, admin_user):
+    fr = client.get("/login", headers={"Accept-Language": "fr-FR,fr;q=0.9"})
+    assert '<html lang="fr"' in fr.text
+    assert "Connectez-vous à votre bibliothèque" in fr.text
 
 
 def test_login_page_follows_the_browser(client, admin_user):

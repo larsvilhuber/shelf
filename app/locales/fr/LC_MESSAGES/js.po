@@ -1,0 +1,474 @@
+# French translations for Shelf.
+# Copyright (C) 2026 Shelf contributors
+# This file is distributed under the same license as the Shelf project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"PO-Revision-Date: 2026-11-19 16:27+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: static/js/app.js:71 static/js/app.js:114 static/js/app.js:124
+#: static/js/browse.js:30
+msgid "Done"
+msgstr "Terminé"
+
+#: static/js/browse.js:29
+#, python-brace-format
+msgid "{count} selected"
+msgstr "{count} sélectionné(s)"
+
+#: static/js/browse.js:30
+msgid "Select"
+msgstr "Sélectionner"
+
+#: static/js/browse.js:84
+msgid "Press ? for keyboard shortcuts"
+msgstr "Appuyez sur ? pour les raccourcis clavier"
+
+#: static/js/browse.js:484
+#, python-brace-format
+msgid "Updated {count} items"
+msgstr "{count} éléments mis à jour"
+
+#: static/js/browse.js:488 static/js/browse.js:491
+msgid "Update failed"
+msgstr "Échec de la mise à jour"
+
+#: static/js/browse.js:525 static/js/browse.js:528
+msgid "Tag update failed"
+msgstr "Échec de la mise à jour des tags"
+
+#: static/js/browse.js:533
+#, python-brace-format
+msgid "Move {count} items to Trash?"
+msgstr "Déplacer {count} éléments vers la corbeille ?"
+
+#: static/js/browse.js:537
+#, python-brace-format
+msgid "Moved {count} items to Trash"
+msgstr "{count} éléments déplacés vers la corbeille"
+
+#: static/js/components-item.js:419
+msgid "Synced to Hardcover"
+msgstr "Synchronisé avec Hardcover"
+
+#: static/js/components-item.js:420
+msgid "Connection failed"
+msgstr "Échec de la connexion"
+
+#: static/js/components-item.js:443
+msgid "Restored from Trash"
+msgstr "Restauré depuis la corbeille"
+
+#: static/js/components-item.js:443
+msgid "Added to wishlist"
+msgstr "Ajouté à la liste de souhaits"
+
+#: static/js/components-item.js:444
+msgid "Failed"
+msgstr "Échec"
+
+#: static/js/components-item.js:537 static/js/intake.js:400
+msgid "Author(s)"
+msgstr "Auteur(s)"
+
+#: static/js/components-item.js:578 static/js/components-item.js:582
+msgid "Could not copy from that item."
+msgstr "Impossible de copier depuis cet élément."
+
+#: static/js/components-settings.js:767
+msgid "Never"
+msgstr "Jamais"
+
+#: static/js/components-settings.js:779
+msgid "Copied"
+msgstr "Copié"
+
+#: static/js/components-settings.js:779
+msgid "Copy"
+msgstr "Copier"
+
+#: static/js/components-settings.js:807
+#, python-brace-format
+msgid "Revoke token {name}?"
+msgstr "Révoquer le jeton {name} ?"
+
+#: static/js/components.js:82
+msgid "Could not change the language"
+msgstr "Impossible de changer la langue"
+
+#: static/js/intake.js:186
+msgid "No camera found. Use Choose photo instead."
+msgstr "Aucune caméra trouvée. Utilisez plutôt « Choisir une photo »."
+
+#: static/js/intake.js:187 static/js/item_edit.js:55 static/js/item_edit.js:142
+#: static/js/scan.js:386
+msgid "Camera access denied. Check browser permissions for this site."
+msgstr "Accès à la caméra refusé. Vérifiez les autorisations du navigateur pour ce site."
+
+#: static/js/intake.js:197
+msgid "Could not capture a frame — try again."
+msgstr "Impossible de capturer une image : réessayez."
+
+#: static/js/intake.js:362 static/js/intake.js:366
+msgid "Analysis failed"
+msgstr "Échec de l’analyse"
+
+#: static/js/intake.js:440
+#, python-brace-format
+msgid "Added {count} items"
+msgstr "{count} éléments ajoutés"
+
+#: static/js/intake.js:442 static/js/intake.js:445
+msgid "Add failed"
+msgstr "Échec de l’ajout"
+
+#: static/js/item_edit.js:28 static/js/item_edit.js:46
+msgid "Point the camera at a 978 or 979 ISBN barcode."
+msgstr "Pointez la caméra vers un code-barres ISBN 978 ou 979."
+
+#: static/js/item_edit.js:34 static/js/item_edit.js:121
+msgid "Starting camera…"
+msgstr "Démarrage de la caméra…"
+
+#: static/js/item_edit.js:53 static/js/item_edit.js:140 static/js/scan.js:384
+msgid "Camera requires HTTPS. Open Shelf through an HTTPS reverse proxy, or leave SHELF_TLS on."
+msgstr "La caméra exige HTTPS. Ouvrez Shelf via un proxy inverse HTTPS, ou laissez SHELF_TLS activé."
+
+#: static/js/item_edit.js:71
+msgid "That barcode is not a 978/979 ISBN. Try again."
+msgstr "Ce code-barres n’est pas un ISBN 978/979. Réessayez."
+
+#: static/js/item_edit.js:115 static/js/item_edit.js:133
+msgid "Point the camera at a UPC-A or EAN-13 retail barcode."
+msgstr "Pointez la caméra vers un code-barres commercial UPC-A ou EAN-13."
+
+#: static/js/item_edit.js:158
+msgid "That is not a valid UPC-A / EAN-13 retail barcode. Try again."
+msgstr "Ce n’est pas un code-barres commercial UPC-A / EAN-13 valide. Réessayez."
+
+#: static/js/scan.js:28 static/js/scan.js:163 static/js/scan.js:165
+msgid "Want to"
+msgstr "À commencer"
+
+#: static/js/scan.js:29 static/js/scan.js:163 static/js/scan.js:165
+msgid "In progress"
+msgstr "En cours"
+
+#: static/js/scan.js:30 static/js/scan.js:163 static/js/scan.js:165
+msgid "Finished"
+msgstr "Terminé"
+
+#: static/js/scan.js:52
+msgid "Add"
+msgstr "Ajouter"
+
+#: static/js/scan.js:53
+msgid "Wishlist"
+msgstr "Liste de souhaits"
+
+#: static/js/scan.js:54
+msgid "Lend"
+msgstr "Prêter"
+
+#: static/js/scan.js:55
+msgid "Return"
+msgstr "Retour"
+
+#: static/js/scan.js:56
+msgid "Move"
+msgstr "Déplacer"
+
+#: static/js/scan.js:57
+msgid "Inventory"
+msgstr "Inventaire"
+
+#: static/js/scan.js:58 static/js/scan.js:94
+msgid "Lookup"
+msgstr "Consulter"
+
+#: static/js/scan.js:59 static/js/scan.js:95
+msgid "Quick Rate"
+msgstr "Note rapide"
+
+#: static/js/scan.js:65
+msgid "Target Location"
+msgstr "Emplacement de destination"
+
+#: static/js/scan.js:65
+msgid "Auditing Location"
+msgstr "Emplacement inventorié"
+
+#: static/js/scan.js:65
+msgid "Location"
+msgstr "Emplacement"
+
+#: static/js/scan.js:70
+msgid "Barcode"
+msgstr "Code-barres"
+
+#: static/js/scan.js:70
+msgid "ISBN / UPC"
+msgstr "ISBN / UPC"
+
+#: static/js/scan.js:72
+msgid "Scan barcode..."
+msgstr "Scanner un code-barres…"
+
+#: static/js/scan.js:73
+msgid "Scan any barcode..."
+msgstr "Scanner n’importe quel code-barres…"
+
+#: static/js/scan.js:74
+msgid "Scan UPC barcode..."
+msgstr "Scanner un code-barres UPC…"
+
+#: static/js/scan.js:74
+msgid "Scan or type ISBN..."
+msgstr "Scanner ou saisir un ISBN…"
+
+#: static/js/scan.js:77
+msgid "Title or author..."
+msgstr "Titre ou auteur…"
+
+#: static/js/scan.js:77
+msgid "Game title..."
+msgstr "Titre du jeu…"
+
+#: static/js/scan.js:77
+msgid "Movie title..."
+msgstr "Titre du film…"
+
+#: static/js/scan.js:78
+msgid "Book title or author..."
+msgstr "Titre ou auteur du livre…"
+
+#: static/js/scan.js:81
+msgid "Recently Added"
+msgstr "Ajoutés récemment"
+
+#: static/js/scan.js:81
+msgid "Added to Wishlist"
+msgstr "Ajoutés à la liste de souhaits"
+
+#: static/js/scan.js:81
+msgid "Checked Out"
+msgstr "Prêtés"
+
+#: static/js/scan.js:81
+msgid "Returned"
+msgstr "Rendus"
+
+#: static/js/scan.js:82
+msgid "Moved"
+msgstr "Déplacés"
+
+#: static/js/scan.js:82
+msgid "Scanned Items"
+msgstr "Éléments scannés"
+
+#: static/js/scan.js:82
+msgid "Lookup Results"
+msgstr "Résultats de la consultation"
+
+#: static/js/scan.js:83
+msgid "Marked as finished"
+msgstr "Marqués comme terminés"
+
+#: static/js/scan.js:83
+msgid "Results"
+msgstr "Résultats"
+
+#: static/js/scan.js:88
+msgid "Add Items"
+msgstr "Ajouter des éléments"
+
+#: static/js/scan.js:88
+msgid "Scan barcodes to add items to your collection."
+msgstr "Scannez des codes-barres pour ajouter des éléments à votre collection."
+
+#: static/js/scan.js:89
+msgid "Add to Wishlist"
+msgstr "Ajouter à la liste de souhaits"
+
+#: static/js/scan.js:89
+msgid "Scan to save items you want but haven't bought yet."
+msgstr "Scannez pour noter les éléments que vous voulez mais n’avez pas encore achetés."
+
+#: static/js/scan.js:90
+msgid "Lend Items"
+msgstr "Prêter des éléments"
+
+#: static/js/scan.js:90
+msgid "Select a borrower, then scan items to check them out."
+msgstr "Choisissez un emprunteur, puis scannez les éléments à lui prêter."
+
+#: static/js/scan.js:91
+msgid "Return Items"
+msgstr "Retour d’éléments"
+
+#: static/js/scan.js:91
+msgid "Scan items to check them back in."
+msgstr "Scannez les éléments pour enregistrer leur retour."
+
+#: static/js/scan.js:92
+msgid "Move Items"
+msgstr "Déplacer des éléments"
+
+#: static/js/scan.js:92
+msgid "Select a target location, then scan items to move them."
+msgstr "Choisissez un emplacement de destination, puis scannez les éléments à déplacer."
+
+#: static/js/scan.js:93
+msgid "Inventory Audit"
+msgstr "Inventaire"
+
+#: static/js/scan.js:93
+msgid "Select a location and scan every item you find there. Start an audit to get a report."
+msgstr "Choisissez un emplacement et scannez chaque élément que vous y trouvez. Lancez un inventaire pour obtenir un rapport."
+
+#: static/js/scan.js:94
+msgid "Scan to check if an item is in your collection. No changes are made."
+msgstr "Scannez pour vérifier si un élément est dans votre collection. Rien n’est modifié."
+
+#: static/js/scan.js:95
+msgid "Scan to mark items as read or completed."
+msgstr "Scannez pour marquer des éléments comme lus ou terminés."
+
+#: static/js/scan.js:118
+msgid "Could not load recent scans"
+msgstr "Impossible de charger les scans récents"
+
+#: static/js/scan.js:267 static/js/scan.js:416
+msgid "Select a borrower first"
+msgstr "Choisissez d’abord un emprunteur"
+
+#: static/js/scan.js:272 static/js/scan.js:420
+msgid "Select a location first"
+msgstr "Choisissez d’abord un emplacement"
+
+#: static/js/scan.js:488
+msgid "Choose the matching book below"
+msgstr "Choisissez le livre correspondant ci-dessous"
+
+#: static/js/scan.js:488
+msgid "Type the five digits below"
+msgstr "Saisissez les cinq chiffres ci-dessous"
+
+#: static/js/scan.js:507 static/js/shelf-fill.js:135
+msgid "error"
+msgstr "erreur"
+
+#: static/js/scan.js:507 static/js/shelf-fill.js:135
+msgid "Scan failed"
+msgstr "Échec du scan"
+
+#: static/js/shelf-fill.js:4
+msgid "shelved"
+msgstr "rangé"
+
+#: static/js/shelf-fill.js:33 static/js/shelf-fill.js:51
+msgid "Choose a shelf location first"
+msgstr "Choisissez d’abord l’emplacement de l’étagère"
+
+#: static/js/shelf-fill.js:70
+msgid "Camera access failed. Check browser permissions and HTTPS."
+msgstr "Échec de l’accès à la caméra. Vérifiez les autorisations du navigateur et HTTPS."
+
+#: static/js/store.js:155
+msgid "Store Mode is turned off on this Shelf. Your queued scans are kept."
+msgstr "Le mode magasin est désactivé sur ce Shelf. Vos scans en attente sont conservés."
+
+#: static/js/store.js:156
+msgid "Sign in to Shelf to sync your queued scans."
+msgstr "Connectez-vous à Shelf pour synchroniser vos scans en attente."
+
+#: static/js/store.js:201
+msgid "1 barcode didn't scan cleanly — saved to your wishlist to fix later."
+msgstr "1 code-barres n’a pas été lu correctement : enregistré dans votre liste de souhaits pour le corriger plus tard."
+
+#: static/js/store.js:202
+#, python-brace-format
+msgid "{count} barcodes didn't scan cleanly — saved to your wishlist to fix later."
+msgstr "{count} codes-barres n’ont pas été lus correctement : enregistrés dans votre liste de souhaits pour les corriger plus tard."
+
+#: static/js/store.js:206
+msgid "1 restored from Trash."
+msgstr "1 restauré depuis la corbeille."
+
+#: static/js/store.js:207
+#, python-brace-format
+msgid "{count} restored from Trash."
+msgstr "{count} restaurés depuis la corbeille."
+
+#: static/js/store.js:237
+msgid "Already queued for your wishlist."
+msgstr "Déjà en attente pour votre liste de souhaits."
+
+#: static/js/store.js:241
+msgid "Added to sync queue — syncing now…"
+msgstr "Ajouté à la file de synchronisation : synchronisation en cours…"
+
+#: static/js/store.js:242
+msgid "Queued — will be added to your wishlist when back online."
+msgstr "En attente : sera ajouté à votre liste de souhaits au retour en ligne."
+
+#: static/js/store.js:266
+msgid "OWNED"
+msgstr "POSSÉDÉ"
+
+#: static/js/store.js:272
+msgid "ON WISHLIST"
+msgstr "DANS LA LISTE DE SOUHAITS"
+
+#: static/js/store.js:278
+msgid "NOT IN LIBRARY"
+msgstr "ABSENT DE LA BIBLIOTHÈQUE"
+
+#: static/js/store.js:279
+#, python-brace-format
+msgid "ISBN {code}"
+msgstr "ISBN {code}"
+
+#: static/js/store.js:295 static/js/store.js:317
+msgid "Scan with Camera"
+msgstr "Scanner avec la caméra"
+
+#: static/js/store.js:313
+msgid "Stop Camera"
+msgstr "Arrêter la caméra"
+
+#: static/js/store.js:323
+msgid "Camera unavailable — use manual entry."
+msgstr "Caméra indisponible : utilisez la saisie manuelle."
+
+#: static/js/store.js:363
+#, python-brace-format
+msgid "{count} titles cached"
+msgstr "{count} titres en cache"
+
+#: static/js/store.js:363
+msgid "No library data cached yet"
+msgstr "Aucune donnée de bibliothèque en cache"
+
+#: static/js/store.js:365
+#, python-brace-format
+msgid "synced {when}"
+msgstr "synchronisé {when}"
+
+#: static/js/store.js:367
+msgid "online"
+msgstr "en ligne"
+
+#: static/js/store.js:367
+msgid "offline"
+msgstr "hors ligne"
+

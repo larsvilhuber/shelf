@@ -18,12 +18,13 @@ from functools import lru_cache
 from pathlib import Path
 
 # Locale identifiers in gettext's directory form: `it`, `zh_Hans`, `pt_BR`.
-SUPPORTED = ("en", "it", "zh_Hans")
+SUPPORTED = ("en", "fr", "it", "zh_Hans")
 DEFAULT = "en"
 LOCALE_DIR = Path(__file__).parent / "locales"
 # Each language named in itself, so a reader who can't read the current UI
 # can still find their own in the picker.
-LANGUAGE_NAMES = {"en": "English", "it": "Italiano", "zh_Hans": "简体中文"}
+LANGUAGE_NAMES = {"en": "English", "fr": "Français", "it": "Italiano",
+                  "zh_Hans": "简体中文"}
 # Regions that stand for a script, which no rule can derive (only Chinese).
 ALIASES = {"zh_TW": "zh_Hant", "zh_HK": "zh_Hant", "zh_MO": "zh_Hant",
            "zh_CN": "zh_Hans", "zh_SG": "zh_Hans"}
